@@ -17,7 +17,7 @@ packer {
 
 source "qemu" "practice-vm" {
     iso_url = "https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso"
-    iso_checksum            = "file:https://releases.ubuntu.com/26.04/SHA256SUMS"
+    iso_checksum_url = "file:https://releases.ubuntu.com/26.04/SHA256SUMS"
     disk_size = "10000M"
     memory = "4096"
     cores = 2
