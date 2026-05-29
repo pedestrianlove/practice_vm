@@ -52,7 +52,7 @@ jobs:
 
       - name: Build packer image
         run: |
-          packer build -only=qemu.practice-vm .
+          packer build -only=qemu.practice-vm . 
 
       - name: Bump version and push tag
         id: tag_version
